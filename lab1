@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Main {
+   public static void main(String[] args) {
+    
+   }
+   
+   public static void printArrayList(ArrayList<Integer> myArray, String a) {
+    Scanner scnr = new Scanner(System.in);
+        int i;
+        a = scnr.next();
+        myArray.add(1);
+        myArray.add(22);
+        myArray.add(333);
+        myArray.add(400);
+        myArray.add(5005);
+        myArray.add(9);
+        
+        printArrayList(myArray, ", ");
+        printArrayList(myArray, " - ");
+   
+
+        for  (i=0; i < myArray.size(); i++){
+            System.out.print(myArray.get(i));
+            if (i < myArray.size() -1){
+                System.out.print(a);
+            }
+        }
+   } 
+}
